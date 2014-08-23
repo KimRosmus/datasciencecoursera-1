@@ -66,7 +66,9 @@ run_analysis <- function() {
     ##14 labeling the columns of data set with descriptive variable names.
     for (n in 3:81) {
         ind <- as.numeric(substring(names(result)[n],2))
-        colnames(result)[n] <- as.character(features$V2[ind])
+        cname <- as.character(features$V2[ind])
+        cname <- gsub("\\()", "", cname)
+        colnames(result)[n] <- cname
     }
     
     ##15 returning the required "tidy data set" as mentioned in the step 5 of the problem statement of assignment.
