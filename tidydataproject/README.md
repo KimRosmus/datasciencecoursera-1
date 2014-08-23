@@ -3,7 +3,7 @@ Instructions to get the Tidy Data Set as outlined in the course project of "Gett
 
 - Place the Run_Analysis.R script in the same working directory as the samsung data - ie UCI_HAR_Dataset
 
-- Step 4th and 6th of the Run_Analysis.R script achieves the step 1 & 2 of the requirement ie merging the training and test sets to create one data set with only measurements on the mean and standard deviation for each measurement.
+- Step 4th and 6th of the Run_Analysis.R script achieves the step 1 & 2 of the requirement ie merging the training and test sets to create one data set with only measurements on the mean and standard deviation for each measurement. For filtering the "mean" measurements, I have used grep("mean",features$V2) - which will filter column likes "meanFreq*" as well. Standard deviation is filtered through grep("std()",features$V2) which gets the exact column names representing the standard deviation.
 
 -  Step 13th and 14th of the Run_Analysis.R script labels the activities and column names of the resulting tidy data set. This completes the requirements 1 to 4 of the assignment.
 
