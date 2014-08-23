@@ -34,7 +34,7 @@ DATA DICTIONARY - Samsung tidy data set
 
 1. subject range -  1 to 30
 2. activity
->
+
 | Number        | Label           |
 | ------------- |:-------------:|
 | 1     | WALKING |
@@ -43,7 +43,7 @@ DATA DICTIONARY - Samsung tidy data set
 | 4     | SITTING |
 | 5     | STANDING |
 | 6     | LAYING |
->
+
 3. "tBodyAcc-mean()-X"
 4. "tBodyAcc-mean()-Y"
 5. "tBodyAcc-mean()-Z"
