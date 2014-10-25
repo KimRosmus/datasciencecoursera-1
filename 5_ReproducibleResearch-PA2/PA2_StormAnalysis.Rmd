@@ -130,4 +130,16 @@ tope <- head(fdmg, n=20)
 ggplot(data=tope, aes(x=EVTYPE, y=TOTALDMG/1e+9)) + geom_bar(stat = "identity", fill="#FF0000", colour="black") + theme(axis.text.x = element_text(angle = 90, hjust = 1)) + ggtitle("Top 20 U.S. NOAA Events causing Economical Consequences") + labs(y="Economic Damage(in Billion Dollars)", x="U.S. NOAA Event Type")
 ```
 
-Thanks for reading the report - Have a good day ahead!!
+## RESULTS
+Below we are presenting the final conclusion (events) again from the previous steps of data processing and analysis.
+#### Top Events causing maximum harm with respect to human population health(fatalities & injuries combined) are:
+```{r}
+intersect(topf[,1], topi[,1])
+```
+
+#### Top Events causing maximum economic damage (100's of Billion Dollars):
+```{r}
+head(fdmg, n=10L)
+```
+
+Thanks for reading the report - Have a good day ahead!! :)

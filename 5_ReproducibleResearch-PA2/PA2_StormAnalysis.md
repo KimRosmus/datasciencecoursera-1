@@ -240,4 +240,39 @@ ggplot(data=tope, aes(x=EVTYPE, y=TOTALDMG/1e+9)) + geom_bar(stat = "identity", 
 
 ![plot of chunk unnamed-chunk-12](figure/unnamed-chunk-12.png) 
 
-Thanks for reading the report - Have a good day ahead!!
+## RESULTS
+Below we are presenting the final conclusion (events) again from the previous steps of data processing and analysis.
+#### Top Events causing maximum harm with respect to human population health(fatalities & injuries combined) are:
+
+```r
+intersect(topf[,1], topi[,1])
+```
+
+```
+##  [1] "TORNADO"           "EXCESSIVE HEAT"    "FLASH FLOOD"      
+##  [4] "HEAT"              "LIGHTNING"         "TSTM WIND"        
+##  [7] "FLOOD"             "HIGH WIND"         "WINTER STORM"     
+## [10] "THUNDERSTORM WIND" "HEAVY SNOW"        "BLIZZARD"
+```
+
+#### Top Events causing maximum economic damage (100's of Billion Dollars):
+
+```r
+head(fdmg, n=10L)
+```
+
+```
+##                EVTYPE  TOTALDMG
+## 69              FLOOD 1.503e+11
+## 195 HURRICANE/TYPHOON 7.191e+10
+## 352           TORNADO 5.736e+10
+## 297       STORM SURGE 4.332e+10
+## 113              HAIL 1.876e+10
+## 56        FLASH FLOOD 1.824e+10
+## 35            DROUGHT 1.502e+10
+## 187         HURRICANE 1.461e+10
+## 260       RIVER FLOOD 1.015e+10
+## 204         ICE STORM 8.967e+09
+```
+
+Thanks for reading the report - Have a good day ahead!! :)
